@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Правила StyleCop" Description="Кастомні правила StyleCop" ToolsVersion="16.0">
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <!-- Документація (SA1600-SA1699) -->
+    <Rule Id="SA1600" Action="Warning" /> <!-- Elements should be documented -->
+    <Rule Id="SA1633" Action="None" />    <!-- File should have header -->
+
+    <!-- Пробіли (SA1000-SA1025) -->
+    <Rule Id="SA1028" Action="Error" />   <!-- Code should not contain trailing whitespace -->
+
+    <!-- Впорядкування (SA1200-SA1299) -->
+    <Rule Id="SA1200" Action="Warning" /> <!-- Using directives should be placed correctly -->
+
+    <!-- Іменування (SA1300-SA1399) -->
+    <Rule Id="SA1309" Action="Error" />   <!-- Field names should not begin with underscore -->
+
+    <!-- Читабельність (SA1100-SA1199) -->
+    <Rule Id="SA1101" Action="None" />    <!-- Prefix local calls with this -->
+    <Rule Id="SA1413" Action="Warning" /> <!-- Use trailing comma in multi-line initializers -->
+  </Rules>
+</RuleSet>
